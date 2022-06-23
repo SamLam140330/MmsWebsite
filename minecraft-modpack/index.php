@@ -20,127 +20,24 @@
             <h1 class="title">Home</h1>
         </div>
     </section>
-
     <section class="section">
         <div class="timeline is-centered">
-            <p style="text-align:center">Not yet implemented</p>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">20<sup>th</sup> August, 2020</p>
-                    <p><b>V4.5 [Custom] Modpack was released</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">16<sup>th</sup> August, 2020</p>
-                    <p><b>V4.4 [Custom] Modpack was released</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">10<sup>th</sup> August, 2020</p>
-                    <p><b>V4.3 [Custom] Modpack was released</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">1<sup>st</sup> August, 2020</p>
-                    <p><b>V4.2 [Custom] Modpack was released</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">19<sup>th</sup> July, 2020</p>
-                    <p><b>V4.1 [Custom] Modpack was released</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">18<sup>th</sup> July, 2020</p>
-                    <p><b>V4.0 [Custom] Modpack START</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-info">Version 4</span>
-            </header>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">29<sup>th</sup> June, 2020</p>
-                    <p><b>V3.0 [Custom] Modpack END</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">19<sup>th</sup> March, 2020</p>
-                    <p><b>V3.0 [Custom] Modpack START</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-info">Version 3</span>
-            </header>
-            <div class="timeline-item is-warning">
-                <div class="timeline-marker is-warning"></div>
-                <div class="timeline-content">
-                    <p class="heading">17<sup>th</sup> March, 2020</p>
-                    <p><b>V2.5 [FTB Stoneblock 2] Modpack START and END</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-warning">Version 2.5</span>
-            </header>
-
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">30<sup>th</sup> January. 2020</p>
-                    <p><b>V2.0 [Enigmatica 2: Expert] Modpack END</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">18<sup>th</sup> October, 2019</p>
-                    <p><b>V2.0 [Enigmatica 2: Expert] Modpack START</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-info">Version 2</span>
-            </header>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">14<sup>th</sup> October, 2019</p>
-                    <p><b>V1.0 [Custom] Modpack END</b></p>
-                </div>
-            </div>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">27<sup>th</sup> September, 2019</p>
-                    <p><b>V1.0 [Custom] Modpack START</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-info">Version 1</span>
-            </header>
-            <div class="timeline-item is-info">
-                <div class="timeline-marker is-info"></div>
-                <div class="timeline-content">
-                    <p class="heading">22<sup>nd</sup> September, 2019</p>
-                    <p><b>Minecraft Modpack Survival Discord Server was created</b></p>
-                </div>
-            </div>
-            <header class="timeline-header">
-                <span class="tag is-large is-primary">Modpack Server was born</span>
-            </header>
+            <p style="text-align:center">To be continued</p>
+            <?php
+            $json = json_decode(file_get_contents('dev-timeline.json'));
+            foreach ($json as $obj) {
+                $color_mode = $obj->warning == true ? 'is-warning' : 'is-info';
+                foreach ($obj->timeline as $date => $info) {
+                    $formatted_date = preg_replace("/(\d{1,2})(st|nd|th) (\w+,) (\d{4})/", "$1<sup>$2</sup> $3 $4", $matches);
+                    echo '<div class="timeline-item ' . $color_mode . '">';
+                    echo '<div class="timeline-marker ' . $color_mode . '"></div>';
+                    echo '<div class="timeline-content">';
+                    echo '<p class="heading">' . $formatted_date . '</p>';
+                    echo '<p><b>' . $info . '</b></p></div></div>';
+                }
+                echo '<header class="timeline-header"><span class="tag is-large ' . $color_mode . '">' . $obj->title . '</span></header>';
+            }
+            ?>
         </div>
     </section>
 
