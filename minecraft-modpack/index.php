@@ -28,7 +28,7 @@
             foreach ($json as $obj) {
                 $color_mode = $obj->warning == true ? 'is-warning' : 'is-info';
                 foreach ($obj->timeline as $date => $info) {
-                    $formatted_date = preg_replace("/(\d{1,2})(st|nd|th) (\w+,) (\d{4})/", "$1<sup>$2</sup> $3 $4", $matches);
+                    $formatted_date = preg_replace("/(\d{1,2})(st|nd|th) (\w+,) (\d{4})/", "$1<sup>$2</sup> $3 $4", $date);
                     echo '<div class="timeline-item ' . $color_mode . '">';
                     echo '<div class="timeline-marker ' . $color_mode . '"></div>';
                     echo '<div class="timeline-content">';
