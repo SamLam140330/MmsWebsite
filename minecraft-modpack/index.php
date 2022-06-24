@@ -26,7 +26,12 @@
             <?php
             $json = json_decode(file_get_contents('dev-timeline.json'));
             foreach ($json as $obj) {
-                $color_mode = $obj->warning == true ? 'is-warning' : 'is-info';
+                $color_mode = 'is-info';
+                if (isset($obj->warning)) {
+                    if ($obj->warning == true) {
+                        $color_mode = 'is-warning';
+                    }
+                }
                 foreach ($obj->timeline as $date => $info) {
                     $formatted_date = preg_replace("/(\d{1,2})(st|nd|th) (\w+,) (\d{4})/", "$1<sup>$2</sup> $3 $4", $date);
                     echo '<div class="timeline-item ' . $color_mode . '">';
