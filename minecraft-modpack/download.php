@@ -71,23 +71,23 @@
                 document.getElementById("BtnDownload").className = "button is-success";
                 document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 2) {
-                document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V2 Enigmatica 2 Expert v1.83 Sam Lam Edition";
+                document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V2 Enigmatica 2 Expert v1.75";
                 document.getElementById("BtnDownload").name = "download_v2";
                 document.getElementById("BtnDownload").value = "Download V2";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 3) {
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V3 Custom";
                 document.getElementById("BtnDownload").name = "download_v3";
                 document.getElementById("BtnDownload").value = "Download V3";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 4) {
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V4 Custom";
                 document.getElementById("BtnDownload").name = "download_v4";
                 document.getElementById("BtnDownload").value = "Download V4";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 5) {
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V5 Dangerous World v0.6";
                 document.getElementById("BtnDownload").name = "download_v5";

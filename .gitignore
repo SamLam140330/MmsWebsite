@@ -1,2 +1,4 @@
-/backend/*
+*
+!/minecraft-modpack/
 !/backend/function.php
+!/troll/

@@ -27,7 +27,7 @@ function downloadModpack()
 }
 
 # Check the modpack file path in the database
-function getModpackFile($version)
+function getModpackFile($version, $isCurseForge)
 {
 }
 ?>
