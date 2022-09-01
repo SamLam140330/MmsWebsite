@@ -22,8 +22,8 @@
 
     <section class="section">
         <div class="buttons has-addons is-centered">
-            <button class="button is-danger" id="Btn-10" disabled onclick="onVerBtnClicked(10)">V10</button>
-            <button class="button is-success is-selected" id="Btn-2" onclick="onVerBtnClicked(-2)">V-2</button>
+            <button class="button is-success is-selected" id="Btn10" onclick="onVerBtnClicked(10)">V10</button>
+            <button class="button is-info" id="Btn-2" onclick="onVerBtnClicked(-2)">V-2</button>
             <button class="button is-info" id="Btn-1" onclick="onVerBtnClicked(-1)">V-1</button>
             <button class="button is-info" id="Btn9" onclick="onVerBtnClicked(9)">V9</button>
             <button class="button is-info" id="Btn8" onclick="onVerBtnClicked(8)">V8</button>
@@ -40,17 +40,17 @@
     <section class="section">
         <div class="container">
             <div class="notification is-info" id="HeaderTitle">
-                Minecraft Modpack Survival V-2 FTB University v1.2.1 Sam Lam Edition
+                Minecraft Modpack Survival V10 Custom
             </div>
             <form action='<?php downloadModpack(); ?>' method='post'>
-                <input class="button is-success" id="BtnDownload" type="submit" name="download_v-2" value="Download V-2">
+                <input class="button is-success" id="BtnDownload" type="submit" name="download_v10" value="Download V10">
             </form>
         </div>
     </section>
 
     <script>
         const minVer = -2;
-        const maxVer = 9;
+        const maxVer = 10;
 
         function onVerBtnClicked(versionNum) {
             for (var i = minVer; i <= maxVer; i++) {
@@ -92,14 +92,14 @@
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V5 Dangerous World v0.6";
                 document.getElementById("BtnDownload").name = "download_v5";
                 document.getElementById("BtnDownload").value = "Download V5";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 6) {
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V6 Dangerous World v1.3";
                 document.getElementById("BtnDownload").name = "download_v6";
                 document.getElementById("BtnDownload").value = "Download V6";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             } else if (versionNum == 7) {
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V7 Custom";
                 document.getElementById("BtnDownload").name = "download_v7";
@@ -134,8 +134,8 @@
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V10 Custom";
                 document.getElementById("BtnDownload").name = "download_v10";
                 document.getElementById("BtnDownload").value = "Download V10";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
             }
         }
     </script>
