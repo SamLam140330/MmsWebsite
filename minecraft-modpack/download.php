@@ -22,7 +22,8 @@
 
     <section class="section">
         <div class="buttons has-addons is-centered">
-            <button class="button is-success is-selected" id="Btn10" onclick="onVerBtnClicked(10)">V10</button>
+            <button class="button is-success is-selected" id="Btn11" onclick="onVerBtnClicked(11)">V11</button>
+            <button class="button is-info" id="Btn10" onclick="onVerBtnClicked(10)">V10</button>
             <button class="button is-info" id="Btn-2" onclick="onVerBtnClicked(-2)">V-2</button>
             <button class="button is-info" id="Btn-1" onclick="onVerBtnClicked(-1)">V-1</button>
             <button class="button is-info" id="Btn9" onclick="onVerBtnClicked(9)">V9</button>
@@ -40,17 +41,17 @@
     <section class="section">
         <div class="container">
             <div class="notification is-info" id="HeaderTitle">
-                Minecraft Modpack Survival V10 Custom
+                Minecraft Modpack Survival V11 Divine Journey 2
             </div>
             <form action='<?php downloadModpack(); ?>' method='post'>
-                <input class="button is-success" id="BtnDownload" type="submit" name="download_v10" value="Download V10">
+                <input class="button is-success" id="BtnDownload" type="submit" name="download_v11" value="Download V11">
             </form>
         </div>
     </section>
 
     <script>
         const minVer = -2;
-        const maxVer = 10;
+        const maxVer = 11;
 
         function onVerBtnClicked(versionNum) {
             for (var i = minVer; i <= maxVer; i++) {
@@ -134,6 +135,12 @@
                 document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V10 Custom";
                 document.getElementById("BtnDownload").name = "download_v10";
                 document.getElementById("BtnDownload").value = "Download V10";
+                document.getElementById("BtnDownload").className = "button is-success";
+                document.getElementById("BtnDownload").disabled = false;
+            } else if (versionNum == 11) {
+                document.getElementById("HeaderTitle").innerHTML = "Minecraft Modpack Survival V11 Divine Journey 2";
+                document.getElementById("BtnDownload").name = "download_v11";
+                document.getElementById("BtnDownload").value = "Download V11";
                 document.getElementById("BtnDownload").className = "button is-success";
                 document.getElementById("BtnDownload").disabled = false;
             }
