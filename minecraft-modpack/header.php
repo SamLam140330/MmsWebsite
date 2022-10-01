@@ -37,15 +37,13 @@
         </div>
         <div class="navbar-end">
             <div class="navbar-item">
-                <a class="button is-link is-focused">
-                    <strong>
-                        <?php
-                        require_once('../backend/function.php');
-                        checkUserAuth();
-                        getUsername();
-                        ?>
-                    </strong>
-                </a>
+                <div class="column has-background-link has-text-white">
+                    <?php
+                    require_once('../backend/function.php');
+                    checkUserAuth();
+                    getUsername();
+                    ?>
+                </div>
             </div>
         </div>
     </div>
