@@ -1,6 +1,8 @@
 *
 !/.github/
 !/.github/*
+!/.github/workflows/
+!/.github/workflows/*
 !/minecraft-modpack/
 !/minecraft-modpack/*
 !/backend/
