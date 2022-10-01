@@ -1,5 +1,13 @@
 *
+!/.github/
+!/.github/*
 !/minecraft-modpack/
-!/backend/dev-timeline.json
+!/minecraft-modpack/*
+!/backend/
 !/backend/function.php
+!/backend/timeline.json
+!/bans/
+!/bans/*
 !/troll/
+!/troll/*
+!favicon.ico

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Version 4",
+        "timeline": {
+            "30th August, 2020": "V4.5 [Custom] Modpack END",
+            "20th August, 2020": "V4.5 [Custom] Modpack was released",
+            "16th August, 2020": "V4.4 [Custom] Modpack was released",
+            "10th August, 2020": "V4.3 [Custom] Modpack was released",
+            "1st August, 2020": "V4.2 [Custom] Modpack was released",
+            "19th July, 2020": "V4.1 [Custom] Modpack was released",
+            "18th July, 2020": "V4.0 [Custom] Modpack START"
+        }
+    },
+    {
+        "title": "Version 3",
+        "timeline": {
+            "29th June, 2020": "V3.0 [Custom] Modpack END",
+            "19th March, 2020": "V3.0 [Custom] Modpack START"
+        }
+    },
+    {
+        "title": "Version 2.5",
+        "warning": true,
+        "timeline": {
+            "17th March, 2020": "V2.5 [FTB Stoneblock 2] Modpack START and END"
+        }
+    },
+    {
+        "title": "Version 2",
+        "timeline": {
+            "30th January, 2020": "V2.0 [Enigmatica 2: Expert] Modpack END",
+            "18th October, 2019": "V2.0 [Enigmatica 2: Expert] Modpack START"
+        }
+    },
+    {
+        "title": "Version 1",
+        "timeline": {
+            "14th October, 2019": "V1.0 [Custom] Modpack END",
+            "27th September, 2019": "V1.0 [Custom] Modpack START"
+        }
+    },
+    {
+        "title": "Modpack Server was born",
+        "timeline": {
+            "22nd September, 2019": "Minecraft Modpack Survival Discord Server was created"
+        }
+    }
+]
