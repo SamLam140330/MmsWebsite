@@ -44,10 +44,19 @@
                 Minecraft Modpack Survival V11 Divine Journey 2
             </div>
             <div class="field">
-                <label class="label">V11.1</label>
+                <label class="label" id="TitleOneClick">V11.1 One Click Installer</label>
             </div>
             <div class="control">
-                <button class="button is-success" id="BtnDownload" name="download_v11">Download V11.1</button>
+                <button class="button is-success" id="BtnDownloadOneClick" name="download_v11">Download</button>
+            </div>
+        </form>
+        <br>
+        <form method="post" action='<?php downloadModpack(); ?>'>
+            <div class="field">
+                <label class="label" id="TitleUpdatePack">V11.1 Update Pack (11.0 > 11.1)</label>
+            </div>
+            <div class="control">
+                <button class="button is-danger" disabled id="BtnDownloadUpdatePack">Not Yet Implemented</button>
             </div>
         </form>
     </section>
@@ -69,84 +78,68 @@
         }
 
         function changeContent(versionNum) {
+            document.getElementById("BtnDownloadOneClick").className = "button is-success";
+            document.getElementById("BtnDownloadOneClick").disabled = false;
+            document.getElementById("BtnDownloadOneClick").innerText = "Download";
             if (versionNum == 1) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V1 Custom";
-                document.getElementById("BtnDownload").name = "download_v1";
-                document.getElementById("BtnDownload").innerText = "Download V1";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V1 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v1";
             } else if (versionNum == 2) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V2 Enigmatica 2 Expert v1.75";
-                document.getElementById("BtnDownload").name = "download_v2";
-                document.getElementById("BtnDownload").innerText = "Download V2";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V2 CurseForge Download Link";
+                document.getElementById("BtnDownloadOneClick").name = "download_v2";
+                document.getElementById("BtnDownloadOneClick").innerText = "Redirect to CurseForge";
             } else if (versionNum == 3) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V3 Custom";
-                document.getElementById("BtnDownload").name = "download_v3";
-                document.getElementById("BtnDownload").innerText = "Download V3";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V3 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v3";
             } else if (versionNum == 4) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V4 Custom";
-                document.getElementById("BtnDownload").name = "download_v4";
-                document.getElementById("BtnDownload").innerText = "Download V4";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V4 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v4";
             } else if (versionNum == 5) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V5 Dangerous World v0.6";
-                document.getElementById("BtnDownload").name = "download_v5";
-                document.getElementById("BtnDownload").innerText = "Download V5";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V5 CurseForge Download Link";
+                document.getElementById("BtnDownloadOneClick").name = "download_v5";
+                document.getElementById("BtnDownloadOneClick").innerText = "Redirect to CurseForge";
             } else if (versionNum == 6) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V6 Dangerous World v1.3";
-                document.getElementById("BtnDownload").name = "download_v6";
-                document.getElementById("BtnDownload").innerText = "Download V6";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V6 CurseForge Download Link";
+                document.getElementById("BtnDownloadOneClick").name = "download_v6";
+                document.getElementById("BtnDownloadOneClick").innerText = "Redirect to CurseForge";
             } else if (versionNum == 7) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V7 Custom";
-                document.getElementById("BtnDownload").name = "download_v7";
-                document.getElementById("BtnDownload").innerText = "Download V7";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("TitleOneClick").innerText = "V7 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v7";
+                document.getElementById("BtnDownloadOneClick").className = "button is-danger";
+                document.getElementById("BtnDownloadOneClick").disabled = true;
             } else if (versionNum == 8) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V8 MC Eternal Lite v1.3.8.1 Sam Lam Edition";
-                document.getElementById("BtnDownload").name = "download_v8";
-                document.getElementById("BtnDownload").innerText = "Download V8";
-                document.getElementById("BtnDownload").className = "button is-danger";
-                document.getElementById("BtnDownload").disabled = true;
+                document.getElementById("TitleOneClick").innerText = "V8 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v8";
+                document.getElementById("BtnDownloadOneClick").className = "button is-danger";
+                document.getElementById("BtnDownloadOneClick").disabled = true;
             } else if (versionNum == 9) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V9 FTB Continuum v1.7.0 Sam Lam Edition";
-                document.getElementById("BtnDownload").name = "download_v9";
-                document.getElementById("BtnDownload").innerText = "Download V9";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V9 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v9";
             } else if (versionNum == -1) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V-1 FTB Academy v1.4.0 Sam Lam Edition";
-                document.getElementById("BtnDownload").name = "download_v-1";
-                document.getElementById("BtnDownload").innerText = "Download V-1";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V-1 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v-1";
             } else if (versionNum == -2) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V-2 FTB University v1.2.1 Sam Lam Edition";
-                document.getElementById("BtnDownload").name = "download_v-2";
-                document.getElementById("BtnDownload").innerText = "Download V-2";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V-2 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v-2";
             } else if (versionNum == 10) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V10 Custom";
-                document.getElementById("BtnDownload").name = "download_v10";
-                document.getElementById("BtnDownload").innerText = "Download V10";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V10 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v10";
             } else if (versionNum == 11) {
                 document.getElementById("HeaderTitle").innerText = "Minecraft Modpack Survival V11 Divine Journey 2";
-                document.getElementById("BtnDownload").name = "download_v11";
-                document.getElementById("BtnDownload").innerText = "Download V11";
-                document.getElementById("BtnDownload").className = "button is-success";
-                document.getElementById("BtnDownload").disabled = false;
+                document.getElementById("TitleOneClick").innerText = "V11.1 One Click Installer";
+                document.getElementById("BtnDownloadOneClick").name = "download_v11";
             }
         }
     </script>
