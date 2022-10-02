@@ -53,4 +53,14 @@ function downloadModpack()
 function getModpackFile($version, $isCurseForge)
 {
 }
+
+# Download the client certificate
+function downloadCert()
+{
+}
+
+# Check the client certificate file path in the database
+function getCertFile($certID)
+{
+}
 ?>
