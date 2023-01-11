@@ -21,7 +21,7 @@
     </section>
 
     <section class="section">
-        <widgetbot server="625235170689024002" channel="957257065179545600" width="1280" height="720"></widgetbot>
+        <widgetbot server="625235170689024002" channel="957257065179545600" width="90vw" height="65vh"></widgetbot>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
