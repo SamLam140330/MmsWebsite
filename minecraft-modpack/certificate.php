@@ -30,7 +30,7 @@
 
     <div class="tabs is-boxed is-centered">
         <ul>
-            <li id="stdCsrBtn" class="is-active" onclick="onCsrBtnClicked(0)"><a>Standend Certificate Signing Request</a></li>
+            <li id="stdCsrBtn" class="is-active" onclick="onCsrBtnClicked(0)"><a>Standard Certificate Signing Request</a></li>
             <li id="advCsrBtn" onclick="onCsrBtnClicked(1)"><a>Advanced Certificate Signing Request</a></li>
         </ul>
     </div>
