@@ -4,7 +4,7 @@
 # Get the modpack timeline
 function getTimeline()
 {
-    $json = json_decode(file_get_contents('../backend/dev-timeline.json'));
+    $json = json_decode(file_get_contents('../backend/timeline.json'));
     foreach ($json as $obj) {
         $color_mode = 'is-info';
         if (isset($obj->warning)) {
