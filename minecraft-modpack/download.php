@@ -54,6 +54,15 @@
         <br>
         <form method="post" action='<?php downloadModpack(); ?>'>
             <div class="field">
+                <label class="label" id="TitleOneClick">V12.0 One Click Installer For Mac</label>
+            </div>
+            <div class="control">
+                <button class="button is-success" id="BtnDownloadOneClick" name="download_v12_mac">Download</button>
+            </div>
+        </form>
+        <br>
+        <form method="post" action='<?php downloadModpack(); ?>'>
+            <div class="field">
                 <label class="label" id="TitleUpdatePack">V12.1 Update Pack (12.0 > 12.1)</label>
             </div>
             <div class="control">
