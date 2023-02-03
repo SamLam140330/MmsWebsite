@@ -24,11 +24,6 @@ function getTimeline()
     }
 }
 
-# Output custom debug log to the console
-function consoleLog($output, $with_script_tags = true)
-{
-}
-
 # Check if the user has admin rights
 function checkAdminAuth()
 {
@@ -44,13 +39,28 @@ function getUsername()
 {
 }
 
+# Get the version information
+function getVersion()
+{
+}
+
+# Display all the modpack version button based on getVersion()
+function getAllVersionButton()
+{
+}
+
+# Check the os that you want to download
+function checkDownloadOS()
+{
+}
+
 # Download the modpack
-function downloadModpack()
+function downloadModpack($os, $version)
 {
 }
 
 # Check the modpack file path in the database
-function getModpackFile($version, $isCurseForge)
+function getModpackFile($os, $version, $isCurseForge)
 {
 }
 
