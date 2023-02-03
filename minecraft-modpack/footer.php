@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="content has-text-centered">
-        <p>Copyright &copy; 2021 - 2022 Elementblend. All Rights Reserved.</p>
+        <p>Copyright &copy; 2021 - 2023 Elementblend. All Rights Reserved.</p>
     </div>
 </footer>
 
