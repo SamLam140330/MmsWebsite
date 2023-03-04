@@ -29,11 +29,10 @@
     <section class="section">
         <form method="post" action='<?php checkDownloadOS(); ?>'>
             <div class="notification is-info" id="TitleModpack">
-                Minecraft Modpack Survival <b>V13</b> All the Mods 8 v1.0.10 Sam Lam Edition
             </div>
 
             <div class="field">
-                <label class="label" id="TitleDownloadWindows">V13.0 Installer For Windows</label>
+                <label class="label" id="TitleDownloadWindows"></label>
             </div>
             <div class="control">
                 <input type="hidden" id="selectedVersion" name="selectedVersion">
@@ -42,7 +41,7 @@
             <br>
             <br>
             <div class="field">
-                <label class="label" id="TitleDownloadMac">V13.0 Installer For Mac</label>
+                <label class="label" id="TitleDownloadMac"></label>
             </div>
             <div class="control">
                 <button class="button is-success" id="temp" type="submit" name="downloadForMac">Download</button>
@@ -50,7 +49,7 @@
             <br>
             <br>
             <div class="field">
-                <label class="label" id="TitleDownloadLinux">V13.0 Installer For Linux</label>
+                <label class="label" id="TitleDownloadLinux"></label>
             </div>
             <div class="control">
                 <button class="button is-danger" disabled type="submit" name="downloadForLinux">Download</button>
@@ -77,6 +76,9 @@
 
         function changeContent(versionNum) {
             document.getElementById("TitleModpack").innerHTML = "Minecraft Modpack Survival <b>V" + versionNum + "</b> ";
+            document.getElementById("TitleDownloadWindows").innerText = "V" + versionNum + " Installer For Windows";
+            document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + " Installer For Mac";
+            document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + " Installer For Linux";
             switch (versionNum) {
                 case 1:
                     document.getElementById("TitleModpack").innerHTML += "Custom";
@@ -121,15 +123,15 @@
                     document.getElementById("TitleModpack").innerHTML += "SkyFactory 4 v4.2.4 Sam Lam Edition";
                     break;
                 case 13:
-                    document.getElementById("TitleModpack").innerHTML += "All the Mods 8 v1.0.10 Sam Lam Edition";
+                    document.getElementById("TitleModpack").innerHTML += "All the Mods 8 v1.0.11 Sam Lam Edition";
+                    document.getElementById("TitleDownloadWindows").innerText = "V" + versionNum + ".1 Installer For Windows";
+                    document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + ".1 Installer For Mac";
+                    document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + ".1 Installer For Linux";
                     break;
                 default:
                     console.error("Unknown version number: " + versionNum);
                     return;
             }
-            document.getElementById("TitleDownloadWindows").innerText = "V" + versionNum + " Installer For Windows";
-            document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + " Installer For Mac";
-            document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + " Installer For Linux";
 
             // temp for disable and can be remove soon, same as "temp" id attribute
             if (versionNum != 13) {
