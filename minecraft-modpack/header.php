@@ -28,11 +28,14 @@
             <a class="navbar-item" href="/minecraft-modpack/gallery">
                 Gallery
             </a>
+            <a class="navbar-item" href="/minecraft-modpack/contribute">
+                Contribute
+            </a>
             <a class="navbar-item" href="/minecraft-modpack/certificate">
                 Certificate
             </a>
-            <a class="navbar-item" href="/minecraft-modpack/contribute">
-                Contribute
+            <a class="navbar-item" href="/minecraft-modpack/application">
+                Application
             </a>
         </div>
         <div class="navbar-end">

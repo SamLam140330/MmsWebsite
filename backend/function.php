@@ -73,4 +73,19 @@ function downloadCert()
 function getCertFile($certID)
 {
 }
+
+# Process the button of submit the certificate application
+function submitCertAppliForm()
+{
+}
+
+# Insert the data of the certificate application into the database
+function insertToDatabase($discordID, $mcName, $websiteName, $email, $spec)
+{
+}
+
+# Check the data user inputted in the certificate application form
+function inputPostProcess($data)
+{
+}
 ?>
