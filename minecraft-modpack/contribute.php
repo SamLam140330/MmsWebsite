@@ -21,7 +21,59 @@
     </section>
 
     <section class="section">
-        <h1 class='title has-text-danger has-text-centered'>Not Yet Implemented</h1>
+        <div class="column">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/48656764?v=4">
+                    </figure>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/37017127?v=4">
+                    </figure>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/65012377?v=4">
+                    </figure>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column has-text-centered has-background-light">
+                    <a href="https://github.com/SamLam140330" target="_blank" class="has-text-link is-clickable">SamLam140330</a>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered has-background-light">
+                    <a href="https://github.com/LHemon412" target="_blank" class="has-text-link is-clickable">LHemon412</a>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered has-background-light">
+                    <a href="https://github.com/HongKongMapping" target="_blank" class="has-text-link is-clickable">HongKongMapping</a>
+                </div>
+            </div>
+            <div class="columns is-3">
+                <div class="column has-text-centered">
+                    <p class="is-size-5">Founder, Owner</p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered">
+                    <p class="is-size-5">Code optimization</p>
+                </div>
+                <div class="column is-1"></div>
+                <div class="column has-text-centered">
+                    <p class="is-size-5">Timeline Maintainer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="has-text-centered">
+            <p class="is-size-4 is-inline-block">Have some idea? Feel free to contribute through&nbsp;</p><a href="https://github.com/SamLam140330/MmsWebsite" target="_blank" class="is-size-4 has-text-link">GitHub</a>
+        </div>
     </section>
 
     <?php
