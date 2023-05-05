@@ -31,10 +31,10 @@
             <a class="navbar-item" href="/minecraft-modpack/contribute">
                 Contribute
             </a>
-            <a class="navbar-item" href="/minecraft-modpack/certificate">
+            <a class="navbar-item" href="/minecraft-modpack/certificate.php">
                 Certificate
             </a>
-            <a class="navbar-item" href="/minecraft-modpack/application">
+            <a class="navbar-item" href="/minecraft-modpack/application.php">
                 Application
             </a>
         </div>
