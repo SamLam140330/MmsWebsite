@@ -52,7 +52,7 @@
         <div class="field">
             <label class="label">Certificate Signing Request</label>
             <div class="control">
-                <textarea class="textarea is-danger" placeholder="-----BEGIN CERTIFICATE REQUEST-----&#10;xxx&#10;Content&#10;xxx&#10;-----END CERTIFICATE REQUEST-----"></textarea>
+                <textarea class="textarea is-danger" disabled placeholder="-----BEGIN CERTIFICATE REQUEST-----&#10;xxx&#10;Content&#10;xxx&#10;-----END CERTIFICATE REQUEST-----"></textarea>
             </div>
         </div>
         <div class="field is-grouped">
