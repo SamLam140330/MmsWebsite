@@ -20,53 +20,93 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="column">
-            <div class="columns">
-                <div class="column has-text-centered">
-                    <figure class="image is-128x128 is-inline-block">
-                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/48656764?v=4">
-                    </figure>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered">
-                    <figure class="image is-128x128 is-inline-block">
-                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/37017127?v=4">
-                    </figure>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered">
-                    <figure class="image is-128x128 is-inline-block">
-                        <img class="is-rounded" src="https://avatars.githubusercontent.com/u/65012377?v=4">
-                    </figure>
-                </div>
+    <section class="section" id="desktop">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="https://avatars.githubusercontent.com/u/48656764?v=4">
+                </figure>
             </div>
-            <div class="columns">
-                <div class="column has-text-centered has-background-light">
-                    <a href="https://github.com/SamLam140330" target="_blank" class="has-text-link is-clickable">SamLam140330</a>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered has-background-light">
-                    <a href="https://github.com/LHemon412" target="_blank" class="has-text-link is-clickable">LHemon412</a>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered has-background-light">
-                    <a href="https://github.com/HongKongMapping" target="_blank" class="has-text-link is-clickable">HongKongMapping</a>
-                </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="https://avatars.githubusercontent.com/u/37017127?v=4">
+                </figure>
             </div>
-            <div class="columns is-3">
-                <div class="column has-text-centered">
-                    <p class="is-size-5">Founder, Owner</p>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered">
-                    <p class="is-size-5">Code optimization</p>
-                </div>
-                <div class="column is-1"></div>
-                <div class="column has-text-centered">
-                    <p class="is-size-5">Timeline Maintainer</p>
-                </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="https://avatars.githubusercontent.com/u/65012377?v=4">
+                </figure>
             </div>
+        </div>
+
+        <div class="columns">
+            <div class="column has-text-centered has-background-light">
+                <a href="https://github.com/SamLam140330" target="_blank" class="has-text-link is-clickable">SamLam140330</a>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered has-background-light">
+                <a href="https://github.com/LHemon412" target="_blank" class="has-text-link is-clickable">LHemon412</a>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered has-background-light">
+                <a href="https://github.com/HongKongMapping" target="_blank" class="has-text-link is-clickable">HongKongMapping</a>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column has-text-centered">
+                <p class="is-size-5">Founder, Owner</p>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered">
+                <p class="is-size-5">Code optimization</p>
+            </div>
+            <div class="column is-1"></div>
+            <div class="column has-text-centered">
+                <p class="is-size-5">Timeline maintainer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section is-hidden" id="mobile">
+        <div class="box has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/48656764?v=4">
+            </figure>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <a href="https://github.com/SamLam140330" target="_blank" class="has-text-link is-clickable">SamLam140330</a>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <p class="is-size-5">Founder, Owner</p>
+        </div>
+
+        <div class="column is-1"></div>
+        <div class="box has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/37017127?v=4">
+            </figure>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <a href="https://github.com/LHemon412" target="_blank" class="has-text-link is-clickable">LHemon412</a>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <p class="is-size-5">Code optimization</p>
+        </div>
+
+        <div class="column is-1"></div>
+        <div class="box has-text-centered">
+            <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/65012377?v=4">
+            </figure>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <a href="https://github.com/HongKongMapping" target="_blank" class="has-text-link is-clickable">HongKongMapping</a>
+        </div>
+        <div class="column has-text-centered has-background-light">
+            <p class="is-size-5">Timeline maintainer</p>
         </div>
     </section>
 
@@ -75,6 +115,25 @@
             <p class="is-size-4 is-inline-block">Have some idea? Feel free to contribute through&nbsp;</p><a href="https://github.com/SamLam140330/MmsWebsite" target="_blank" class="is-size-4 has-text-link">GitHub</a>
         </div>
     </section>
+
+    <script>
+        function checkWindowSize() {
+            var width = window.innerWidth;
+            if (width <= 768) {
+                document.getElementById("desktop").setAttribute("class", "section is-hidden");
+                document.getElementById("mobile").setAttribute("class", "section");
+            } else {
+                document.getElementById("desktop").setAttribute("class", "section");
+                document.getElementById("mobile").setAttribute("class", "section is-hidden");
+            }
+        }
+
+        var onResizeWindow = function(e) {
+            checkWindowSize();
+        }
+        window.addEventListener("resize", onResizeWindow);
+        checkWindowSize();
+    </script>
 
     <?php
     include('footer.php');
