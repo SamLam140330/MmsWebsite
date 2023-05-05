@@ -7,7 +7,6 @@
     <title>Modpack - Certificate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,8 +22,8 @@
 
     <section class="section">
         <p class="has-text-danger-dark">
-            This page only works for those who have permission to get the login certificate
-            <br> Please contact the administrator for future information
+            This page only works for those who already have permission to get the login certificate
+            <br> Please contact the administrator for future information if you believe you have permission
         </p>
     </section>
 
@@ -40,7 +39,7 @@
             <div class="field">
                 <label class="label">Certificate ID</label>
                 <div class="control">
-                    <input class="input" name="certID" id="certID" type="text" placeholder="Please input the id that the administrator has given to you" maxlength="50" required>
+                    <input class="input is-primary" name="certID" id="certID" type="text" placeholder="Please input the id that the administrator has given to you" maxlength="50" required>
                 </div>
             </div>
             <div class="control">
@@ -53,7 +52,7 @@
         <div class="field">
             <label class="label">Certificate Signing Request</label>
             <div class="control">
-                <textarea class="textarea" placeholder="-----BEGIN CERTIFICATE REQUEST-----&#10;xxx&#10;Content&#10;xxx&#10;-----END CERTIFICATE REQUEST-----"></textarea>
+                <textarea class="textarea is-danger" placeholder="-----BEGIN CERTIFICATE REQUEST-----&#10;xxx&#10;Content&#10;xxx&#10;-----END CERTIFICATE REQUEST-----"></textarea>
             </div>
         </div>
         <div class="field is-grouped">
@@ -111,12 +110,7 @@
                 document.getElementById("linInst").className = "section is-hidden";
                 document.getElementById("winBtn").className = "is-active";
                 document.getElementById("linBtn").className = "";
-            } /*else {
-                document.getElementById("linInst").className = "section";
-                document.getElementById("winInst").className = "section is-hidden";
-                document.getElementById("linBtn").className = "is-active";
-                document.getElementById("winBtn").className = "";
-            }*/
+            }
         }
     </script>
 
