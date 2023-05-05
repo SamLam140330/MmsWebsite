@@ -59,7 +59,7 @@
 
     <script>
         const minVer = -2;
-        const maxVer = 13;
+        const maxVer = 14;
         onVerBtnClicked(maxVer);
 
         function onVerBtnClicked(versionNum) {
@@ -128,13 +128,19 @@
                     document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + ".1 Installer For Mac";
                     document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + ".1 Installer For Linux";
                     break;
+                case 14:
+                    document.getElementById("TitleModpack").innerHTML += "FTB Interactions v2.12.1 Sam Lam Edition";
+                    document.getElementById("TitleDownloadWindows").innerText = "V" + versionNum + ".0 Installer For Windows";
+                    document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + ".0 Installer For Mac";
+                    document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + ".0 Installer For Linux";
+                    break;
                 default:
                     console.error("Unknown version number: " + versionNum);
                     return;
             }
 
             // temp for disable and can be remove soon, same as "temp" id attribute
-            if (versionNum != 13) {
+            if (versionNum != 14 && versionNum != 13) {
                 document.getElementById("temp").className = "button is-danger";
                 document.getElementById("temp").disabled = true;
             } else {
