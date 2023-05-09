@@ -83,7 +83,7 @@ if (strstr($arg0, ":issued")) {
 $uuid = $page->uuid_dashify($arg0);
 $name = $page->get_name($uuid);
 
-$name !== null or die(str_replace("{name}", $name, $page->t("error.name.unseen")));
+$name !== null or die(str_replace("{name}", "null", $page->t("error.name.unseen")));
 
 if ($staffhistory) {
     $page->title = $page->t("title.staff-history");

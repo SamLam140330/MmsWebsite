@@ -11,7 +11,7 @@ class Check {
         if ($page->is_uuid($name) && preg_match("/^[0-9a-zA-Z-]{32,36}$/", $name)) {
             $column = "uuid";
             $name = $page->uuid_dashify($name);
-        } else if (strlen($name) > 16 || !preg_match("/^[0-9a-zA-Z_]{1,16}$/", $name)) {
+        } else if (strlen($name) > 16 || !preg_match("/^[*.]{0,1}[0-9a-zA-Z_]{1,16}$/", $name)) {
             $this->println($page->t("error.name.invalid"));
             return;
         }
