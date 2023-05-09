@@ -37,7 +37,7 @@
             if ($result == false) {
                 echo '<p class="has-text-danger-dark">Your application has been submitted failed! Please try again later</p>';
             } else {
-                header('Location: application', true, 303);
+                header('Location: application.php', true, 303);
                 exit();
             }
         }
@@ -77,7 +77,7 @@
                     <br>
                     <label class="label">Computer Specification</label>
                     <div class="control">
-                        <textarea class="textarea is-primary" name="spec" id="spec" type="textarea" placeholder="Your Computer Specification (eg: Cpu:i5-13400, Gpu: Rtx3060, Ram: 16GB)"></textarea>
+                        <textarea class="textarea is-primary" name="spec" id="spec" type="textarea" placeholder="Your Computer Specification (eg: Cpu:i5-13400, Gpu: Rtx3060, Ram: 16GB)" required></textarea>
                         <p>Use for estimating the total number of mods in the upcoming modpack</p>
                     </div>
                 </div>
