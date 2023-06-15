@@ -32,50 +32,62 @@
         <?php
         $displayForm = true;
         if (isset($_POST['submitCertAppli'])) {
-            $displayForm = false;
-            $result = submitCertAppliForm();
-            if ($result == false) {
-                echo '<p class="has-text-danger-dark">Your application has been submitted failed! Please try again later</p>';
-            } else {
-                header('Location: application.php', true, 303);
-                exit();
+            if (isset($_POST['discordID']) && isset($_POST['mcName']) && isset($_POST['websiteName']) && isset($_POST['email']) && isset($_POST['spec'])) {
+                $discordID = inputPostProcess($_POST["discordID"]);
+                $mcName = inputPostProcess($_POST["mcName"]);
+                $websiteName = inputPostProcess($_POST["websiteName"]);
+                $email = inputPostProcess($_POST["email"]);
+                $spec = inputPostProcess($_POST["spec"]);
+                $displayForm = false;
+                $result = submitCertAppliForm($discordID, $mcName, $websiteName, $email, $spec);
+                if ($result == "success") {
+                    header('Location: application.php', true, 303);
+                    exit();
+                } else {
+                    echo '<p class="has-text-danger-dark">Your application has been submitted failed! ' . $result . '</p>';
+                }
             }
         }
         if (isset($_SESSION['hasSubmitAppliForm'])) {
             $displayForm = false;
-            echo '<p class="has-text-success-dark">Your application has been submitted successfully! Please wait for our staff to process your application</p>';
+            echo '<p class="has-text-success-dark">Your application has been submitted successfully! Please wait for our staff to process your application. Thank you.</p>';
         }
 
         if ($displayForm) {
         ?>
+            <p>Please fill in all the blanks in the form below to apply for a website login credential (certificate). After the application is approved, you will receive an email with your login credential (certificate) and information.</p>
             <form method="post" name="CertAppliForm">
                 <h1 class="title">Website Login Certificate Application</h1>
                 <div class="field">
-                    <label class="label">Discord ID</label>
+                    <label class="label has-text-danger">Discord ID</label>
                     <div class="control">
                         <input class="input is-primary" name="discordID" id="discordID" type="text" placeholder="Your discord ID (eg: SamLam140330#1882)" maxlength="40" required>
                         <p>Use for assigning a role to our discord server</p>
                     </div>
-                    <br>
-                    <label class="label">Minecraft Name</label>
+                </div>
+                <div class="field">
+                    <label class="label has-text-danger">Minecraft Name</label>
                     <div class="control">
                         <input class="input is-primary" name="mcName" id="mcName" type="text" placeholder="Your Minecraft Name (eg: SamLam140330)" maxlength="40" required>
                         <p>Use for assigning to our server whitelist</p>
                     </div>
-                    <br>
-                    <label class="label">Website Username</label>
+                </div>
+                <div class="field">
+                    <label class="label has-text-danger">Website Username</label>
                     <div class="control">
                         <input class="input is-primary" name="websiteName" id="websiteName" type="text" placeholder="Your Website Username (eg: SamLam140330)" maxlength="40" required>
                         <p>Use for displaying the username on our website (Just like the right top corner, should display Guess currently)</p>
                     </div>
-                    <br>
-                    <label class="label">Email</label>
+                </div>
+                <div class="field">
+                    <label class="label has-text-danger">Email</label>
                     <div class="control">
                         <input class="input is-primary" name="email" id="email" type="text" placeholder="Your Email (eg: example@gmail.com)" maxlength="50" required>
                         <p>Use for receiving your login credential and information</p>
                     </div>
-                    <br>
-                    <label class="label">Computer Specification</label>
+                </div>
+                <div class="field">
+                    <label class="label has-text-danger">Computer Specification</label>
                     <div class="control">
                         <textarea class="textarea is-primary" name="spec" id="spec" type="textarea" placeholder="Your Computer Specification (eg: Cpu:i5-13400, Gpu: Rtx3060, Ram: 16GB)" required></textarea>
                         <p>Use for estimating the total number of mods in the upcoming modpack</p>
