@@ -36,7 +36,7 @@
             </div>
             <div class="control">
                 <input type="hidden" id="selectedVersion" name="selectedVersion">
-                <button class="button is-success" type="submit" name="downloadForWindows">Download</button>
+                <button class="button is-success" id="temp_win" type="submit" name="downloadForWindows">Download</button>
             </div>
             <br>
             <br>
@@ -44,7 +44,7 @@
                 <label class="label" id="TitleDownloadMac"></label>
             </div>
             <div class="control">
-                <button class="button is-success" id="temp" type="submit" name="downloadForMac">Download</button>
+                <button class="button is-success" id="temp_mac" type="submit" name="downloadForMac">Download</button>
             </div>
             <br>
             <br>
@@ -59,7 +59,7 @@
 
     <script>
         const minVer = -2;
-        const maxVer = 14;
+        const maxVer = 15;
         onVerBtnClicked(maxVer);
 
         function onVerBtnClicked(versionNum) {
@@ -130,9 +130,9 @@
                     break;
                 case 14:
                     document.getElementById("TitleModpack").innerHTML += "FTB Interactions v2.12.1 Sam Lam Edition";
-                    document.getElementById("TitleDownloadWindows").innerText = "V" + versionNum + ".0 Installer For Windows";
-                    document.getElementById("TitleDownloadMac").innerText = "V" + versionNum + ".0 Installer For Mac";
-                    document.getElementById("TitleDownloadLinux").innerText = "V" + versionNum + ".0 Installer For Linux";
+                    break;
+                case 15:
+                    document.getElementById("TitleModpack").innerHTML += "RE V1 Custom Modpack";
                     break;
                 default:
                     console.error("Unknown version number: " + versionNum);
@@ -141,11 +141,15 @@
 
             // temp for disable and can be remove soon, same as "temp" id attribute
             if (versionNum != 14 && versionNum != 13) {
-                document.getElementById("temp").className = "button is-danger";
-                document.getElementById("temp").disabled = true;
+                document.getElementById("temp_mac").className = "button is-danger";
+                document.getElementById("temp_mac").disabled = true;
+                document.getElementById("temp_win").className = "button is-danger";
+                document.getElementById("temp_win").disabled = true;
             } else {
-                document.getElementById("temp").className = "button is-success";
-                document.getElementById("temp").disabled = false;
+                document.getElementById("temp_mac").className = "button is-success";
+                document.getElementById("temp_mac").disabled = false;
+                document.getElementById("temp_win").className = "button is-success";
+                document.getElementById("temp_win").disabled = false;
             }
         }
     </script>
