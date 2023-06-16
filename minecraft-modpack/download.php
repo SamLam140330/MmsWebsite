@@ -140,7 +140,7 @@
             }
 
             // temp for disable and can be remove soon, same as "temp" id attribute
-            if (versionNum != 14 && versionNum != 13) {
+            if (versionNum != 15 && versionNum != 14 && versionNum != 13) {
                 document.getElementById("temp_mac").className = "button is-danger";
                 document.getElementById("temp_mac").disabled = true;
                 document.getElementById("temp_win").className = "button is-danger";
