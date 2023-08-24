@@ -59,7 +59,7 @@
 
     <script>
         const minVer = -2;
-        const maxVer = 15;
+        const maxVer = 16;
         onVerBtnClicked(maxVer);
 
         function onVerBtnClicked(versionNum) {
@@ -134,13 +134,16 @@
                 case 15:
                     document.getElementById("TitleModpack").innerHTML += "RE V1 Custom Modpack";
                     break;
+                case 16:
+                    document.getElementById("TitleModpack").innerHTML += "Questing Mayhem v1.0.3 MMS Edition";
+                    break;
                 default:
                     console.error("Unknown version number: " + versionNum);
                     return;
             }
 
             // temp for disable and can be remove soon, same as "temp" id attribute
-            if (versionNum != 15 && versionNum != 14 && versionNum != 13) {
+            if (versionNum != 16 && versionNum != 15 && versionNum != 14 && versionNum != 13) {
                 document.getElementById("temp_mac").className = "button is-danger";
                 document.getElementById("temp_mac").disabled = true;
                 document.getElementById("temp_win").className = "button is-danger";
