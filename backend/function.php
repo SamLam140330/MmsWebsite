@@ -64,6 +64,11 @@ function getModpackFile($os, $version, $isCurseForge)
 {
 }
 
+# Download the certificate installer
+function downloadCertInstaller($os)
+{
+}
+
 # Download the client certificate
 function downloadCert()
 {
@@ -76,11 +81,6 @@ function getCertFile($certID)
 
 # Process the button of submit the certificate application
 function submitCertAppliForm()
-{
-}
-
-# Insert the data of the certificate application into the database
-function insertToDatabase($discordID, $mcName, $websiteName, $email, $spec)
 {
 }
 

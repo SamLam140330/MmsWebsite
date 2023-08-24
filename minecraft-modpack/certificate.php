@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modpack - Certificate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
 </head>
 
 <body>
@@ -22,9 +22,49 @@
 
     <section class="section">
         <p class="has-text-danger-dark">
-            This page only works for those who already have permission to get the login certificate
+            All content and application only work for those who already have permission to get the login certificate
             <br> Please contact the administrator for future information if you believe you have permission
         </p>
+    </section>
+
+    <section class="section">
+        <form method="post" action='<?php checkDownloadOS(); ?>'>
+            <div class="notification is-info">
+                <p>Certificate Installer <span style="color: #FFF300">(New Method)</span></p>
+            </div>
+
+            <div class="field">
+                <label class="label">For Windows</label>
+            </div>
+            <div class="control">
+                <input type="hidden" id="certInstaller" name="certInstaller">
+                <button class="button is-success" type="submit" name="downloadForWindows">Download</button>
+            </div>
+            <br>
+            <br>
+            <div class="field">
+                <label class="label">For Mac (Arm)</label>
+            </div>
+            <div class="control">
+                <button class="button is-success" type="submit" name="downloadForMac">Download</button>
+            </div>
+            <br>
+            <br>
+            <div class="field">
+                <label class="label">For Mac (Intel Based)</label>
+            </div>
+            <div class="control">
+                <button class="button is-success" type="submit" name="downloadForMacIntel">Download</button>
+            </div>
+            <br>
+            <br>
+            <div class="field">
+                <label class="label">For Linux</label>
+            </div>
+            <div class="control">
+                <button class="button is-danger" disabled type="submit" name="downloadForLinux">Download</button>
+            </div>
+        </form>
     </section>
 
     <div class="tabs is-boxed is-centered">
@@ -35,15 +75,16 @@
     </div>
 
     <section class="section" id="stdCsr">
+        <h1 class='title has-text-danger has-text-centered'>Deprecated</h1>
         <form method="post" name="stdCsrForm">
             <div class="field">
                 <label class="label">Certificate ID</label>
                 <div class="control">
-                    <input class="input is-primary" name="certID" id="certID" type="text" placeholder="Please input the id that the administrator has given to you" maxlength="50" required>
+                    <input class="input is-danger" disabled name="certID" id="certID" type="text" placeholder="Please input the id that the administrator has given to you" maxlength="50">
                 </div>
             </div>
             <div class="control">
-                <button class="button is-success" onclick="<?php downloadCert(); ?>" name="stdSubmit">Submit</button>
+                <button class="button is-danger" disabled name="stdSubmit">Submit</button>
             </div>
         </form>
     </section>
@@ -57,7 +98,7 @@
         </div>
         <div class="field is-grouped">
             <div class="control">
-                <button class="button is-danger" disabled>Not Yet Implemented</button>
+                <button class="button is-danger" disabled>Submit</button>
             </div>
         </div>
         <p class="has-text-danger-dark">
