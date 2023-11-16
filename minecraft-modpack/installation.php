@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modpack - Installation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.4/bulma-switch/dist/css/bulma-switch.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-background-white has-text-dark">
         <h1 class='title has-text-danger has-text-centered'>Not Yet Implemented</h1>
     </section>
 

@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <nav class="navbar" aria-label="main-navigation">
-    <div class="navbar-brand">
+    <div class="navbar-brand has-background-light has-text-black">
         <a class="navbar-item" href="/minecraft-modpack/index">
             <img alt="navbar-logo" src="../res/header-icon.png" width="48" height="48">
         </a>
@@ -11,34 +11,40 @@
         </a>
     </div>
 
-    <div id="navbarBasic" class="navbar-menu">
+    <div id="navbarBasic" class="navbar-menu has-background-light has-text-black">
         <div class="navbar-start">
             <a class="navbar-item" href="/minecraft-modpack/index">
-                Home
+                <p class="has-background-light has-text-black">Home</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/installation">
-                Installation
+                <p class="has-background-light has-text-black">Installation</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/download">
-                Download
+                <p class="has-background-light has-text-black">Download</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/statistic">
-                Statistic
+                <p class="has-background-light has-text-black">Statistic</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/gallery">
-                Gallery
+                <p class="has-background-light has-text-black">Gallery</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/contribute">
-                Contribute
+                <p class="has-background-light has-text-black">Contribute</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/certificate.php">
-                Certificate
+                <p class="has-background-light has-text-black">Certificate</p>
             </a>
             <a class="navbar-item" href="/minecraft-modpack/application.php">
-                Application
+                <p class="has-background-light has-text-black">Application</p>
             </a>
         </div>
         <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field">
+                    <input id="darkModeSwitch" type="checkbox" name="darkModeSwitch" class="switch" onclick="onDarkModeSwitchClicked()">
+                    <label id="darkModeSwitchText" for="darkModeSwitch" class="has-background-light has-text-black">Dark mode</label>
+                </div>
+            </div>
             <div class="navbar-item">
                 <div class="column has-background-link has-text-white">
                     <?php

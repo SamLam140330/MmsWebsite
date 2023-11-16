@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Server - Application</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.4/bulma-switch/dist/css/bulma-switch.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-background-white has-text-dark">
         <div class="tabs is-boxed is-centered">
             <ul>
                 <li id="CertAppliBtn" class="is-active" onclick="onAppliBtnClicked(0)"><a>Website Login Certificate Application</a></li>
@@ -28,7 +28,7 @@
         </div>
     </section>
 
-    <section class="section" id="CertAppli">
+    <section class="section has-background-white has-text-dark" id="CertAppli">
         <?php
         $displayForm = true;
         if (isset($_POST['submitCertAppli'])) {
@@ -59,37 +59,37 @@
             <form method="post" name="CertAppliForm">
                 <h1 class="title">Website Login Certificate Application</h1>
                 <div class="field">
-                    <label class="label has-text-danger">Discord ID</label>
+                    <p class="label has-text-danger">Discord ID</p>
                     <div class="control">
-                        <input class="input is-primary" name="discordID" id="discordID" type="text" placeholder="Your discord ID (eg: SamLam140330#1882)" maxlength="40" required>
+                        <input class="input is-primary" name="discordID" id="discordID" type="text" placeholder="Your discord ID (eg: SamLam140330#1882)" maxlength="40" autocomplete="off" required>
                         <p>Use for assigning a role to our discord server</p>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label has-text-danger">Minecraft Name</label>
+                    <p class="label has-text-danger">Minecraft Name</p>
                     <div class="control">
-                        <input class="input is-primary" name="mcName" id="mcName" type="text" placeholder="Your Minecraft Name (eg: SamLam140330)" maxlength="40" required>
+                        <input class="input is-primary" name="mcName" id="mcName" type="text" placeholder="Your Minecraft Name (eg: SamLam140330)" maxlength="40" autocomplete="off" required>
                         <p>Use for assigning to our server whitelist</p>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label has-text-danger">Website Username</label>
+                    <p class="label has-text-danger">Website Username</p>
                     <div class="control">
-                        <input class="input is-primary" name="websiteName" id="websiteName" type="text" placeholder="Your Website Username (eg: SamLam140330)" maxlength="40" required>
+                        <input class="input is-primary" name="websiteName" id="websiteName" type="text" placeholder="Your Website Username (eg: SamLam140330)" maxlength="40" autocomplete="off" required>
                         <p>Use for displaying the username on our website (Just like the right top corner, should display Guess currently)</p>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label has-text-danger">Email</label>
+                    <p class="label has-text-danger">Email</p>
                     <div class="control">
-                        <input class="input is-primary" name="email" id="email" type="text" placeholder="Your Email (eg: example@gmail.com)" maxlength="50" required>
+                        <input class="input is-primary" name="email" id="email" type="text" placeholder="Your Email (eg: example@gmail.com)" maxlength="50" autocomplete="off" required>
                         <p>Use for receiving your login credential and information</p>
                     </div>
                 </div>
                 <div class="field">
-                    <label class="label has-text-danger">Computer Specification</label>
+                    <p class="label has-text-danger">Computer Specification</p>
                     <div class="control">
-                        <textarea class="textarea is-primary" name="spec" id="spec" type="textarea" placeholder="Your Computer Specification (eg: Cpu:i5-13400, Gpu: Rtx3060, Ram: 16GB)" required></textarea>
+                        <textarea class="textarea is-primary" name="spec" id="spec" type="textarea" placeholder="Your Computer Specification (eg: Cpu:i5-13400, Gpu: Rtx3060, Ram: 16GB)" autocomplete="off" required></textarea>
                         <p>Use for estimating the total number of mods in the upcoming modpack</p>
                     </div>
                 </div>

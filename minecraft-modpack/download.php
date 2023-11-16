@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modpack - Download</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.4/bulma-switch/dist/css/bulma-switch.min.css">
 </head>
 
 <body>
@@ -20,19 +20,18 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-background-white has-text-dark">
         <div class="buttons has-addons is-centered">
             <?php getAllVersionButton(); ?>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-background-white has-text-dark">
         <form method="post" action='<?php checkDownloadOS(); ?>'>
             <div class="notification is-info" id="TitleModpack">
             </div>
-
             <div class="field">
-                <label class="label" id="TitleDownloadWindows"></label>
+                <p id="TitleDownloadWindows"></p>
             </div>
             <div class="control">
                 <input type="hidden" id="selectedVersion" name="selectedVersion">
@@ -41,7 +40,7 @@
             <br>
             <br>
             <div class="field">
-                <label class="label" id="TitleDownloadMac"></label>
+                <p id="TitleDownloadMac"></p>
             </div>
             <div class="control">
                 <button class="button is-success" id="temp_mac" type="submit" name="downloadForMac">Download</button>
@@ -49,7 +48,7 @@
             <br>
             <br>
             <div class="field">
-                <label class="label" id="TitleDownloadLinux"></label>
+                <p id="TitleDownloadLinux"></p>
             </div>
             <div class="control">
                 <button class="button is-danger" disabled type="submit" name="downloadForLinux">Download</button>

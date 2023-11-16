@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modpack - Contribute</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.4/bulma-switch/dist/css/bulma-switch.min.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         </div>
     </section>
 
-    <section class="section" id="desktop">
+    <section id="desktop" class="section has-background-white has-text-dark">
         <div class="columns">
             <div class="column has-text-centered">
                 <figure class="image is-128x128 is-inline-block">
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <section class="section is-hidden" id="mobile">
+    <section class="section is-hidden has-background-white has-text-dark" id="mobile">
         <div class="box has-text-centered">
             <figure class="image is-128x128 is-inline-block">
                 <img class="is-rounded" src="https://avatars.githubusercontent.com/u/48656764?v=4">
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-background-white has-text-dark">
         <div class="has-text-centered">
             <p class="is-size-4 is-inline-block">Have some idea? Feel free to contribute through&nbsp;</p><a href="https://github.com/SamLam140330/MmsWebsite" target="_blank" class="is-size-4 has-text-link">GitHub</a>
         </div>
@@ -120,11 +120,11 @@
         function checkWindowSize() {
             var width = window.innerWidth;
             if (width <= 768) {
-                document.getElementById("desktop").setAttribute("class", "section is-hidden");
-                document.getElementById("mobile").setAttribute("class", "section");
+                document.getElementById("desktop").setAttribute("class", "section has-background-white has-text-dark is-hidden");
+                document.getElementById("mobile").setAttribute("class", "section has-background-white has-text-dark");
             } else {
-                document.getElementById("desktop").setAttribute("class", "section");
-                document.getElementById("mobile").setAttribute("class", "section is-hidden");
+                document.getElementById("desktop").setAttribute("class", "section has-background-white has-text-dark");
+                document.getElementById("mobile").setAttribute("class", "section has-background-white has-text-dark is-hidden");
             }
         }
 
