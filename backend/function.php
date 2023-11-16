@@ -80,7 +80,7 @@ function getCertFile($certID)
 }
 
 # Process the button of submit the certificate application
-function submitCertAppliForm()
+function submitCertAppliForm($discordID, $mcName, $websiteName, $email, $spec)
 {
 }
 
