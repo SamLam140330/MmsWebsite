@@ -5,6 +5,8 @@
 !/.github/workflows/*
 !/minecraft-modpack/
 !/minecraft-modpack/*
+!/res/
+!/res/*
 !/backend/
 !/backend/function.php
 !/backend/timeline.json

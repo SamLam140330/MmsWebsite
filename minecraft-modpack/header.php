@@ -2,7 +2,7 @@
 <nav class="navbar" aria-label="main-navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="/minecraft-modpack/index">
-            <img alt="navbar-logo" src="https://cdn.discordapp.com/icons/625235170689024002/5ed84ffea9a0182a6fc76e59d48a6ba6.webp?size=48" width="48" height="48">
+            <img alt="navbar-logo" src="../res/header-icon.png" width="48" height="48">
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="navbarButton" onclick="onNavbarButtonClicked()">
             <span aria-hidden="true"></span>
