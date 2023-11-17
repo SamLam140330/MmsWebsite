@@ -6,7 +6,7 @@
 
 <script>
     function onNavbarButtonClicked() {
-        if (document.getElementById("navbarBasic").getAttribute("class") === "navbar-menu is-active") {
+        if (document.getElementById("navbarBasic").classList.contains("is-active")) {
             document.getElementById("navbarButton").classList.remove("is-active");
             document.getElementById("navbarBasic").classList.remove("is-active");
         } else {
